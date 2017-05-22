@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+  <div id="a"></div>
+
+  <script>
+    function fu() {
+      document.write(
+        '<iframe width="560" height="315" src="https://goo.gl/JCwXG8" frameborder="0" allowfullscreen />'
+      );
+    }
+    
+    window.onload = function() {
+      var myAge = prompt("How old are you?");
+      var yourAge = prompt("How old is your cousinbrother?");
+    
+      alert(
+        "Hey, it's not fair because I had to wait " +
+          myAge +
+          " years to play. So, you have to wait " +
+          (myAge - yourAge) +
+          " more years to play."
+      );
+    
+      fu();
+    };
+  </script>
+
+</body>
+
+</html>
